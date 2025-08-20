@@ -1,0 +1,203 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ABL Static</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/theme.css">
+  <script src="components/site-nav.js" defer></script>
+  <script src="components/accordion.js" defer></script>
+  <script src="components/modal.js" defer></script>
+  <script src="components/reveal.js" defer></script>
+  <script>
+  (function () {
+    function syncFooterPadding() {
+      const f = document.querySelector('.site-nav');
+      if (!f) return;
+      document.documentElement.style.setProperty('--footer-h', f.offsetHeight + 'px');
+      document.body.style.paddingBottom = `calc(${getComputedStyle(document.documentElement).getPropertyValue('--footer-h')} + 16px)`;
+    }
+    window.addEventListener('load', syncFooterPadding);
+    window.addEventListener('resize', syncFooterPadding);
+  })();
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const segments = document.querySelectorAll('.figure8 [data-target]');
+
+  function setActive(id){
+    document.querySelectorAll('.figure8 .segment').forEach(g=>{
+      g.classList.toggle('active', g.getAttribute('data-target') === id);
+    });
+  }
+
+  segments.forEach(seg => {
+    seg.addEventListener('click', () => {
+      const id = seg.getAttribute('data-target');
+      const target = document.getElementById(id);
+      if (!target) return;
+
+      // tutup yg lain, buka target
+      document.querySelectorAll('.accordion details[open]').forEach(d => d.open = false);
+      target.open = true;
+
+      // scroll & highlight
+      target.scrollIntoView({behavior:'smooth', block:'start'});
+      setActive(id);
+    });
+  });
+
+  // optional: set default aktif sesuai accordion yg terbuka
+  const opened = document.querySelector('.accordion details[open]');
+  if (opened) setActive(opened.id);
+});
+</script>
+
+
+</head>
+<body>
+  <header class="container section">
+    <h1>Get to know ABL Group</h1>
+    <p>Integrated Logistics & Infrastructure</p>
+  </header>
+
+  <main class="container">
+    <section class="section" data-reveal>
+      <h2>Company Profile Video</h2>
+      <div class="video-wrap">
+        <iframe 
+          src="https://www.youtube.com/embed/nGoH4YKiCzo?rel=0&modestbranding=1" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section class="section card" data-reveal>
+      <h2>Who We Are</h2>
+      <p>Deskripsi singkat perusahaan.</p>
+    </section>
+
+    <section class="section" data-reveal>
+      <h2>Our Business</h2>
+
+      <div class="business-wrap">
+        <!-- KIRI: SVG angka 8 -->
+        <figure class="figure8" aria-label="Business navigator">
+          <svg viewBox="0 0 600 600" role="img">
+            <!-- Loop atas -->
+            <path class="ring alt" d="
+              M 300 120
+              C 220 120, 160 180, 160 245
+              C 160 310, 220 370, 300 370
+              C 380 370, 440 310, 440 245
+              C 440 180, 380 120, 300 120 Z"/>
+
+            <!-- Loop bawah -->
+            <path class="ring" d="
+              M 300 230
+              C 220 230, 160 290, 160 355
+              C 160 420, 220 480, 300 480
+              C 380 480, 440 420, 440 355
+              C 440 290, 380 230, 300 230 Z"/>
+
+            <!-- Segmen/ikon – klik akan buka accordion -->
+            <g class="segment" data-target="rail-freight" transform="translate(220,205)">
+              <circle r="26" class="seg-dot"/>
+              <!-- pakai ikon file -->
+              <image class="icon" href="assets/icons/rail.svg" x="-14" y="-14" width="28" height="28"/>
+              <!-- fallback text kalau file belum ada -->
+              <text class="icon-fallback" text-anchor="middle" dy="6">🚆</text>
+            </g>
+
+            <g class="segment" data-target="transshipment" transform="translate(300,315)">
+              <circle r="26" class="seg-dot"/>
+              <image class="icon" href="assets/icons/ship.svg" x="-14" y="-14" width="28" height="28"/>
+              <text class="icon-fallback" text-anchor="middle" dy="6">🚢</text>
+            </g>
+
+            <g class="segment" data-target="port-management" transform="translate(380,270)">
+              <circle r="26" class="seg-dot"/>
+              <image class="icon" href="assets/icons/port.svg" x="-14" y="-14" width="28" height="28"/>
+              <text class="icon-fallback" text-anchor="middle" dy="6">⚓</text>
+            </g>
+          </svg>
+        </figure>
+
+        <!-- KANAN: Accordion -->
+        <div>
+          <abl-accordion>
+            <section data-title="RAIL FREIGHT" data-id="rail-freight">
+              <p>Deskripsi layanan rail freight.</p>
+            </section>
+            <section data-title="TRANSSHIPMENT" data-id="transshipment">
+              <p>Deskripsi layanan transshipment.</p>
+            </section>
+            <section data-title="PORT MANAGEMENT" data-id="port-management">
+              <p>Deskripsi layanan port management.</p>
+            </section>
+          </abl-accordion>
+        </div>
+      </div>
+  </section>
+
+
+    <section class="section" data-reveal>
+      <h2>Our Fleet</h2>
+      <div class="fleet-grid">
+        <figure class="fleet-card" data-open="#m1">
+          <img src="assets/fleet1.svg" alt="Floating Crane">
+          <figcaption>Floating Crane</figcaption>
+        </figure>
+        <figure class="fleet-card" data-open="#m2">
+          <img src="assets/fleet2.svg" alt="Barge">
+          <figcaption>Barge</figcaption>
+        </figure>
+        <figure class="fleet-card" data-open="#m3">
+          <img src="assets/fleet3.svg" alt="Tug">
+          <figcaption>Tug</figcaption>
+        </figure>
+        <figure class="fleet-card" data-open="#m4">
+          <img src="assets/fleet4.svg" alt="Vessel">
+          <figcaption>Vessel</figcaption>
+        </figure>
+      </div>
+
+      <!-- Modals -->
+      <abl-modal id="m1" title="Floating Crane">
+        <img src="assets/fleet1.svg" alt="Floating Crane">
+        <p>Spesifikasi ringkas Floating Crane.</p>
+      </abl-modal>
+      <abl-modal id="m2" title="Barge">
+        <img src="assets/fleet2.svg" alt="Barge">
+        <p>Spesifikasi ringkas Barge.</p>
+      </abl-modal>
+      <abl-modal id="m3" title="Tug">
+        <img src="assets/fleet3.svg" alt="Tug">
+        <p>Spesifikasi ringkas Tug.</p>
+      </abl-modal>
+      <abl-modal id="m4" title="Vessel">
+        <img src="assets/fleet4.svg" alt="Vessel">
+        <p>Spesifikasi ringkas Vessel.</p>
+      </abl-modal>
+    </section>
+
+    <section class="section card" data-reveal>
+      <h2>FAQ</h2>
+      <abl-accordion>
+        <section data-title="Question?">
+          <p>Answer</p>
+        </section>
+        <section data-title="Question 2?">
+          <p>Answer</p>
+        </section>
+      </abl-accordion>
+    </section>
+  </main>
+
+  <site-nav home="index.html" contact="contact.html"></site-nav>
+</body>
+</html>

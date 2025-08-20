@@ -1,0 +1,47 @@
+
+:root{
+  --bg: #0b1220;
+  --card: #121a2a;
+  --muted: #e9eef5;
+  --brand1: #2ec4b6;
+  --brand2: #0aa36e;
+  --border: #2a3448;
+  --shadow: 0 10px 40px rgba(0,0,0,.35);
+  --radius: 14px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; background: radial-gradient(1200px 800px at 50% 15%, #0f1b30, var(--bg));
+  color: var(--muted);
+  font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", sans-serif;
+}
+a{color:inherit}
+img{max-width:100%; display:block}
+.container{max-width:1200px; margin:0 auto; padding: 20px}
+.section{padding: 56px 0}
+h1,h2,h3{margin:0 0 12px}
+p{margin:0 0 10px}
+.card{
+  background: rgba(255,255,255,.04);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.grid{
+  display:grid; gap:16px;
+  grid-template-columns: repeat(12, 1fr);
+}
+.col-12{grid-column: span 12}
+.col-6{grid-column: span 6}
+.col-4{grid-column: span 4}
+@media (max-width: 900px){
+  .col-6{grid-column: span 12}
+  .col-4{grid-column: span 6}
+}
+@media (max-width: 600px){
+  .col-4{grid-column: span 12}
+}
