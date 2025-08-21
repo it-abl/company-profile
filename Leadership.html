@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/theme.css">
+  <script src="components/site-nav.js" defer></script>
+  <!-- <script src="components/accordion.js" defer></script>
+  <script src="components/modal.js" defer></script>
+  <script src="components/reveal.js" defer></script> -->
+  <script src="components/revealleadership.js" defer></script>
+  <script>
+  (function () {
+    function syncFooterPadding() {
+      const f = document.querySelector('.site-nav');
+      if (!f) return;
+      document.documentElement.style.setProperty('--footer-h', f.offsetHeight + 'px');
+      document.body.style.paddingBottom = `calc(${getComputedStyle(document.documentElement).getPropertyValue('--footer-h')} + 16px)`;
+    }
+    window.addEventListener('load', syncFooterPadding);
+    window.addEventListener('resize', syncFooterPadding);
+  })();
+</script>
+  <title>Leadership Team</title>
+</head>
+<body>
+    <div class="container section">
+  <h1 style="text-align:center; margin-bottom:40px">Leadership Team</h1>
+  <!-- Leader utama di tengah -->
+  <section class="leader">
+    <img src="assets/profile/BuIka.jpg" alt="Ika Heru">
+    <h2>Ika Heru Beth Ari</h2>
+    <p>President Director</p>
+  </section>
+
+  <!-- Anggota lainnya dalam grid 3 kolom -->
+  <section class="team-container">
+    <div class="member">
+      <img src="assets/profile/PakBudi.jpg" alt="">
+      <h3>Budi Setiawan</h3>
+      <p>Chief Corporate Services and Risk Management​</p>
+    </div>
+    <div class="member">
+      <img src="assets/profile/Gustina.jpg" alt="">
+      <h3>Gustina Sutanto</h3>
+      <p>Chief Finance Officer​</p>
+    </div>
+    <div class="member">
+      <img src="assets/profile/Bobby.jpg" alt="">
+      <h3>Bobby Andhika</h3>
+      <p>Chief Operation Officer</p>
+    </div>
+    <div class="member">
+      <img src="assets/profile/PakHermawan.jpeg" alt="">
+      <h3>Hermawan</h3>
+      <p>Chief Human Resources Officer</p>
+    </div>
+    <div class="member">
+      <img src="assets/profile/MrAnant.jpg" alt="">
+      <h3>Anant Bahl​</h3>
+      <p>General Manager Overseas Commercial &amp; Charter</p>
+    </div>
+    <div class="member">
+      <img src="assets/profile/Darren.jpg" alt="">
+      <h3>Darren Chua Chee How​</h3>
+      <p>Head of Invesment</p>
+    </div>
+    <div class="member">
+      <img src="assets/profile/Tenggar.jpg" alt="">
+      <h3>Tenggar M Siregar</h3>
+      <p>Deputy Chief Operation Officer</p>
+    </div>
+    <div class="member">
+      <img src="assets/profile/PakJason.jpg" alt="">
+      <h3>Jason Chin</h3>
+      <p>Vice President Technical</p>
+    </div>
+    <div class="member">
+      <img src="assets/profile/PakDidik.jpg" alt="">
+      <h3>Didik Santoso</h3>
+      <p>Head of Port Operations</p>
+    </div>
+    <div class="member">
+      <img src="assets/profile/PakDani.jpg" alt="">
+      <h3>Dani Iswardana​</h3>
+      <p>Head of Corporate QHSE &amp; Compliance</p>
+    </div>
+    <div class="member">
+      <img src="assets/profile/PakMichael.jpg" alt="">
+      <h3>Michael Adrian</h3>
+      <p>Head of Legal Commercial</p>
+    </div>
+    <div class="member">
+      <img src="assets/profile/PakArief.jpg" alt="">
+      <h3>Arief Setiawan</h3>
+      <p>Head of Technology Transformation​</p>
+    </div>
+    <div class="member">
+      <img src="assets/profile/Aldrin.jpg" alt="">
+      <h3>Aldrin Sigit</h3>
+      <p>Head of Enterprise RM &amp; Business Continuity</p>
+    </div>
+    <div class="member">
+      <img src="assets/profile/PakJohan.jpg" alt="">
+      <h3>Zenu Djohan</h3>
+      <p>Head of Procurement</p>
+    </div>
+    <div class="member">
+      <img src="assets/profile/Jason.jpg" alt="">
+      <h3>Jason Daniel Sudjoko</h3>
+      <p>Head of Commercial</p>
+    </div>
+  </section>
+        </div>
+<site-nav home="index.html" contact="contact.html"></site-nav>
+</body>
+</html>

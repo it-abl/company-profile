@@ -111,3 +111,117 @@ dialog { z-index: 1000; }
   width:100%; height:100%;
 }
 
+/* Leadership Page */
+
+.leader {
+    text-align: center;
+    margin-bottom: 50px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    max-width: 315px; /* tentukan lebar maksimum */
+    margin: 0 auto 50px auto; /* auto kiri-kanan agar center */
+}
+
+
+    .leader img {
+        width: 100%;
+        max-width: 300px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        /*box-shadow: 0 4px 10px rgba(0,0,0,0.15);*/
+    }
+
+    .leader h2 {
+        color: black;
+        margin: 10px 0 5px;
+    }
+
+    .leader p {
+        color: #666;
+        margin: 0;
+    }
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.member {
+    text-align: center;
+    margin-bottom: 50px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08); 
+}
+
+    .member img {
+        width: 100%;
+        max-width: 300px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .member h3 {
+        color:black;
+        margin: 10px 0 5px;
+        /*font-size: 1em;*/
+    }
+
+    .member p {
+        color: #666;
+        margin: 0;
+        /*font-size: 0.9em;*/
+    }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .team-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .team-container {
+        grid-template-columns: 1fr;
+    }
+
+    .leader img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* Animasi dasar */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* State awal: hidden */
+.leader, .member {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+/* State saat terlihat */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}

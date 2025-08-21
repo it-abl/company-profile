@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\Leadership.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Leadership.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\styles\\theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:styles\\theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\components\\site-nav.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:components\\site-nav.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\styles\\base.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:styles\\base.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\components\\accordion.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:components\\accordion.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\components\\modal.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:components\\modal.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\components\\reveal.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:components\\reveal.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Leadership.html",
+              "DocumentMoniker": "C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\Leadership.html",
+              "RelativeDocumentMoniker": "Leadership.html",
+              "ToolTip": "C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\Leadership.html",
+              "RelativeToolTip": "Leadership.html",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-21T02:12:15.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "accordion.js",
+              "DocumentMoniker": "C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\components\\accordion.js",
+              "RelativeDocumentMoniker": "components\\accordion.js",
+              "ToolTip": "C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\components\\accordion.js",
+              "RelativeToolTip": "components\\accordion.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-08-21T02:08:39.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "modal.js",
+              "DocumentMoniker": "C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\components\\modal.js",
+              "RelativeDocumentMoniker": "components\\modal.js",
+              "ToolTip": "C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\components\\modal.js",
+              "RelativeToolTip": "components\\modal.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-08-21T02:08:32.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "reveal.js",
+              "DocumentMoniker": "C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\components\\reveal.js",
+              "RelativeDocumentMoniker": "components\\reveal.js",
+              "ToolTip": "C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\components\\reveal.js",
+              "RelativeToolTip": "components\\reveal.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-08-21T02:08:30.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site-nav.js",
+              "DocumentMoniker": "C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\components\\site-nav.js",
+              "RelativeDocumentMoniker": "components\\site-nav.js",
+              "ToolTip": "C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\components\\site-nav.js",
+              "RelativeToolTip": "components\\site-nav.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-08-21T02:08:19.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "theme.css",
+              "DocumentMoniker": "C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\styles\\theme.css",
+              "RelativeDocumentMoniker": "styles\\theme.css",
+              "ToolTip": "C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\styles\\theme.css",
+              "RelativeToolTip": "styles\\theme.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-21T02:07:48.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "base.css",
+              "DocumentMoniker": "C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\styles\\base.css",
+              "RelativeDocumentMoniker": "styles\\base.css",
+              "ToolTip": "C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\styles\\base.css",
+              "RelativeToolTip": "styles\\base.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-21T02:07:47.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Users\\ABL412-FADHLY\\source\\repos\\company-profile\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAJwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-21T01:35:47.709Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
