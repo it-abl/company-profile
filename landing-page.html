@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ABL Company Profile</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/theme.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+    header h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .box {
+      width: 24%;
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .box img {
+      width: 50%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .box:hover {
+      transform: scale(1.05);
+    }
+    @media (max-width: 768px) {
+      .box {
+        width: 48%;
+      }
+    }
+    @media (max-width: 480px) {
+      .box {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container section">
+    <h1>Get to know ABL Group</h1>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="box">
+        <img src="assets/logo/abl-logo.png" alt="ABL Logo">
+        <p>Integrated Logistics & Infrastructure</p>
+      </div>
+    </section>
+
+    <section class="section">
+        <div class="box">
+            <img src="assets/logo/one-rail-logo.png" alt="One Rail Logo">
+            <p>Rail freight operator</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="box">
+            <img src="assets/logo/tsa-logo.png" alt="TSA Logo">
+            <p>Bauxite & minerals transshipment operator</p>
+        </div>
+    </section>
+  </main>
+
+  <site-nav home="index.html" contact="contact.html"></site-nav>
+</body>
+</html>
